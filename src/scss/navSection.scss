@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.nav-section {
+  position: absolute;
+  z-index: 998;
+
+  background-color: black;
+  list-style: none;
+  width: 1000px;
+  height: 1000px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.close-nav-section-btn {
+  position: absolute;
+  top: 6%;
+  left: 65%;
+  z-index: 999;
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.close-nav-section-btn:hover {
+  filter: brightness(120%);
+}
+
+.menu-ul {
+  list-style: none;
+  background-color: black;
+  color: white;
+  width: 90%;
+  height: 100%;
+
+  padding: 500px 0;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: yellow 5px dotted;
+  font-size: 24px;
+  gap: 20px;
+  width: 60%;
+  font-family: "Pacifico", cursive;
+}
+
+.menu-dish {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}

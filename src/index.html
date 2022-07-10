@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./assets/logo.png" class="logo"></img>
+  </header>
+  <main class="main">
+    <section class="nav">
+      <ul class="pizza" id="pizza">
+        <li class="pizza-li">
+          <div class="pizza-section" id='1' onclick="openNavSection(this.id);">MENU</div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section"></div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section"></div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section" id='2' onclick="openNavSection(this.id);">OFFERS</div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section"></div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section"></div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section" id='3' onclick="openNavSection(this.id);">ORDER</div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section"></div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section"></div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section" id='4' onclick="openNavSection(this.id);">PLACES</div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section"></div>
+        </li>
+        <li class="pizza-li">
+          <div class="pizza-section"></div>
+        </li>
+        <ul>
+          <button class="close-nav-section-btn" onclick="closeNavSection(this.id)" id="close-btn">
+            <img src="./assets/close.png"></img>
+          </button>
+          <!-- Menu -->
+          <section class="menu nav-section" id="nav-1">
+            <h1>Menu</h1>
+            <ul class="menu-ul">
+
+              <li class="menu-li">Pizza Margherita
+
+              </li>
+              <li class="menu-li">Funghi </li>
+              <li class="menu-li">Cacio e Pepe </li>
+              <li class="menu-li">Carbonara </li>
+            </ul>
+          </section>
+          <!-- Offers -->
+          <section class="offers nav-section" id="nav-2">
+
+            <h1>Offers</h1>
+            <ul>
+              <li>Pizza Margherita</li>
+              <li>Funghi</li>
+              <li>Cacio e Pepe</li>
+              <li>Erminio</li>
+              <li>Napoli</li>
+            </ul>
+          </section>
+          <!-- Order -->
+          <section class="order nav-section" id="nav-3">
+
+            <h1>Order</h1>
+            <ul>
+              <li>Pizza Margherita</li>
+              <li>Funghi</li>
+              <li>Cacio e Pepe</li>
+              <li>Erminio</li>
+              <li>Napoli</li>
+            </ul>
+          </section>
+          <!-- Places -->
+          <section class="places nav-section" id="nav-4">
+
+            <h1>Places</h1>
+            <ul>
+              <li>Pizza Margherita</li>
+              <li>Funghi</li>
+              <li>Cacio e Pepe</li>
+              <li>Erminio</li>
+              <li>Napoli</li>
+            </ul>
+          </section>
+    </section>
+
+    <!-- Spin buttons -->
+
+    <button class="pizza-control-button left" onclick="spinPizza()">
+      <img src="./assets/arrow.svg" class="pizza-control-button-img"></img>
+    </button>
+    <button class="pizza-control-button right" onclick="spinPizza()">
+      <img src="./assets/arrow.svg" class="pizza-control-button-img"></img>
+    </button>
+
+
+    <!-- Reset position  -->
+    <button onclick="resetPizzaPosition()" class="reset-btn">
+      Reset
+    </button>
+  </main>
+
+
+
+  <footer class="footer">
+    <h3>MADE BY ANDREW KOLESNIKOV 2022</h3>
+  </footer>
+</body>
+
+<script src="./js/bundle.min.js">
+
+
+</script>
+<!-- Audio -->
+<audio id="spinPizzaSound" src="./assets/spin.mp3"></audio>
+<audio id="pizzaSectionOpen" src="./assets/chew.wav"></audio>
+
+</html>

@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.nav {
+  overflow: hidden;
+}
+
+.pizza-section {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  transform: skewY(60deg) rotate(15deg);
+  padding-top: 20px;
+}
+
+.pizza {
+  position: relative;
+  padding: 0;
+  margin: 1em auto;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  transition: 5s;
+  margin-top: 150px;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.vexels.com%2Fmedia%2Fusers%2F3%2F157292%2Fisolated%2Fpreview%2F1013ce3cf5903ef5afe01f0fd443dc03-colorido-dise--o-de-pizza-entera-by-vexels.png&f=1&nofb=1");
+  background-size: contain;
+}
+
+.pizza-li {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+  transition: 3s;
+  padding: 40px;
+}
+
+.pizza-li:first-child {
+  transform: rotate(0deg) skewY(-60deg);
+}
+.pizza-li:nth-child(2) {
+  transform: rotate(30deg) skewY(-60deg);
+}
+.pizza-li:nth-child(3) {
+  transform: rotate(60deg) skewY(-60deg);
+}
+.pizza-li:nth-child(4) {
+  transform: rotate(90deg) skewY(-60deg);
+}
+.pizza-li:nth-child(5) {
+  transform: rotate(120deg) skewY(-60deg);
+}
+.pizza-li:nth-child(6) {
+  transform: rotate(150deg) skewY(-60deg);
+}
+.pizza-li:nth-child(7) {
+  transform: rotate(180deg) skewY(-60deg);
+}
+.pizza-li:nth-child(8) {
+  transform: rotate(210deg) skewY(-60deg);
+}
+.pizza-li:nth-child(9) {
+  transform: rotate(240deg) skewY(-60deg);
+}
+.pizza-li:nth-child(10) {
+  transform: rotate(270deg) skewY(-60deg);
+}
+li:nth-child(11) {
+  transform: rotate(300deg) skewY(-60deg);
+}
+.pizza-li:nth-child(12) {
+  transform: rotate(330deg) skewY(-60deg);
+}
+.pizza-li:first-child .pizza-section,
+.pizza-li:nth-child(2) .pizza-section,
+.pizza-li:nth-child(3) .pizza-section,
+.pizza-li:nth-child(4) .pizza-section,
+.pizza-li:nth-child(5) .pizza-section,
+.pizza-li:nth-child(6) .pizza-section,
+.pizza-li:nth-child(7) .pizza-section,
+.pizza-li:nth-child(8) .pizza-section,
+.pizza-li:nth-child(9) .pizza-section,
+.pizza-li:nth-child(10) .pizza-section,
+.pizza-li:nth-child(11) .pizza-section,
+.pizza-li:nth-child(12) .pizza-section {
+  background-size: auto;
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Rubik Moonrocks", cursive;
+}
+
+li:first-child .pizza-section:hover,
+li:nth-child(4) .pizza-section:hover,
+li:nth-child(7) .pizza-section:hover,
+li:nth-child(10) .pizza-section:hover {
+  background-color: rgb(47, 202, 156);
+
+  opacity: 0.3;
+}
+
+.pizza-control-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 100px;
+  height: 100px;
+  top: 70%;
+}
+
+.pizza-control-button-img {
+  width: 150px;
+  height: 200px;
+  transition: 1s;
+  cursor: pointer;
+  opacity: 0.1;
+}
+
+.pizza-control-button-img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.left {
+  top: 80%;
+  left: 10%;
+  transform: rotate(210deg);
+}
+
+.right {
+  right: 10%;
+  transform: rotate(20deg);
+}
+
+.reset-btn {
+  cursor: pointer;
+  width: 200px;
+  height: 75px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: black;
+  color: yellow;
+  font-family: "Rubik Moonrocks", cursive;
+  border: none;
+  font-size: 30px;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+
+.reset-btn:hover {
+  font-size: 25px;
+}
